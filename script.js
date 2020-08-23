@@ -43,6 +43,8 @@ $('#start-btn').click(function(event){
         content += ''
     }
 
+    // Button toggling funcionality below
+
     if (recording){
         content += ' '
         $(this).removeClass('btn-danger')
@@ -58,7 +60,7 @@ $('#start-btn').click(function(event){
     recognition.start()
 })
 
-
+// JQuery ".on" method below
 
 textbox.on('input', function(){
     content = $(this).val()
